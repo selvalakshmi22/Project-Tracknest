@@ -77,79 +77,106 @@
 
 
 
-import React from 'react';
-import './styles.css'; 
-import { Link } from "react-router-dom";
+// import React from 'react';
+// import './styles.css'; 
+// import { Link } from "react-router-dom";
 
-function App() {
-  return (
-    <div>
-      {/* Navbar */}
-      <header className="navbar">
-        <div className="logo">
-        <img src="logo.jpg" alt="tracknest-logo" />
-        </div>
-        <nav className="nav-links">
-          <a href="/d2.png">Demo video</a>
-          <a href="/d5.png">About Us</a>
-          <a href="/d6.png">Help</a>
-          <a href="/d3.png">Feedback</a>
-        </nav>
-        <div className="auth-buttons">
-        <Link to="/signup">
-          <button className="btn btn-signup">Sign up</button>
-        </Link>
-        <Link to="/Login">
-          <button className="btn btn-login">Log in</button>
-          </Link>
-        </div>
-      </header>
+// function App() {
+//   return (
+//     <div>
+//       {/* Navbar */}
+//       <header className="navbar">
+//         <div className="logo">
+//         <img src="logo.jpg" alt="tracknest-logo" />
+//         </div>
+//         <nav className="nav-links">
+//           <a href="/d2.png">Demo video</a>
+//           <a href="/d5.png">About Us</a>
+//           <a href="/d6.png">Help</a>
+//           <a href="/d3.png">Feedback</a>
+//         </nav>
+//         <div className="auth-buttons">
+//         <Link to="/signup">
+//           <button className="btn btn-signup">Sign up</button>
+//         </Link>
+//         <Link to="/Login">
+//           <button className="btn btn-login">Log in</button>
+//           </Link>
+//         </div>
+//       </header>
 
-      {/* Hero Section */}
-      <main className="hero-section">
-        <div className="hero-content">
-          <h1>Track Your 
-               Expenses To 
-                Save Money</h1>
-          <p>Helps you to organize your income and expenses</p>
-          <Link to="/signup">
-          <button className="btn btn-get-started">Get Started</button>
-          </Link>
+//       {/* Hero Section */}
+//       <main className="hero-section">
+//         <div className="hero-content">
+//           <h1>Track Your 
+//                Expenses To 
+//                 Save Money</h1>
+//           <p>Helps you to organize your income and expenses</p>
+//           <Link to="/signup">
+//           <button className="btn btn-get-started">Get Started</button>
+//           </Link>
 
-        </div>
-        <div className="hero-image">
-          <img src="3d.png" alt="Tracking" />
-        </div>
-      </main>
-        <div className="d2-image">
-          <img src="d2.png" alt="dashboard" />
-        </div>
+//         </div>
+//         <div className="hero-image">
+//           <img src="3d.png" alt="Tracking" />
+//         </div>
+//       </main>
+//         <div className="d2-image">
+//           <img src="d2.png" alt="dashboard" />
+//         </div>
    
-        <div className="d3-image">
-          <img src="d3.png" alt="Save_cost" />
-        </div>
+//         <div className="d3-image">
+//           <img src="d3.png" alt="Save_cost" />
+//         </div>
 
-        <div className="d4-image">
-          <img src="d4.png" alt="use_anytime" />
-        </div>
+//         <div className="d4-image">
+//           <img src="d4.png" alt="use_anytime" />
+//         </div>
 
-        <div className="d5-image">
-          <img src="d5.png" alt="use_anytime" />
-        </div>
+//         <div className="d5-image">
+//           <img src="d5.png" alt="use_anytime" />
+//         </div>
 
-        <div className="d6-image">
-          <img src="d6.png" alt="use_anytime" />
-        </div>
+//         <div className="d6-image">
+//           <img src="d6.png" alt="use_anytime" />
+//         </div>
 
-      {/* <Routes>
-        <Route path="/signup" element={<SignUp />} />
+//       {/* <Routes>
+//         <Route path="/signup" element={<SignUp />} />
       
-      </Routes> */}
-    </div>
+//       </Routes> */}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+////////********************************************************************/
+
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import SignUp from './components/SignUp'
+import Login from "./components/Login";
+import Tax from "./components/Tax";
+import Landing from "./components/Landing";
+import SlideNav from "./components/SlideNav";
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+      
+          <Route index element={<Landing />} />  {/* Default page */}
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/tax" element={<Tax />} />
+          <Route path="/slidenav" element={<SlideNav />} />
+
+    
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
-
-
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

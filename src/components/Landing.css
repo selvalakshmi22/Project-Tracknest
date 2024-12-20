@@ -14,26 +14,27 @@ body {
 }
 
 /* Navbar */
-.navbar {
+.landing-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 15px 0px;
   background-color: white;
   border-bottom: 1px solid #ddd;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #4B56D2;
+  margin-left: 30px;
 }
 
 .nav-links a {
-  margin-right: 20px;
+  margin-right: 10px;
   text-decoration: none;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
   transition: color 0.3s ease;
 }
 
@@ -48,6 +49,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   border: none;
+  margin-right: 23px;
 }
 
 .btn-signup {
@@ -128,44 +130,45 @@ body {
 }
 
 .d2-image{
-  background-color: #3546AB;
   display: flex;
   justify-content: center; /* Horizontally centers the image */
   align-items: center; /* Vertically centers the image */
-  height: 100vh; /* Full viewport height */
-  width: 100vw;
+  /* height: 100vh;
+  width: 100vw; */
+  
 }
-.d3-image{
-  background: linear-gradient(135deg, #ffffff, #d9f1ff);
+ .d3-image{
+  /* background: linear-gradient(135deg, #ffffff, #d9f1ff); */
   display: flex;
-  justify-content: center; /* Horizontally centers the image */
-  align-items: center; /* Vertically centers the image */
-  height: 100vh; /* Full viewport height */
-  width: 100vw;
-}
+  justify-content: center;
+  align-items: center; 
+  /* height: 100vh; 
+  width: 100vw; */
+} 
 .d4-image{
-  background: linear-gradient(135deg, #ffffff, #d9f1ff);
+  /* background: linear-gradient(135deg, #ffffff, #d9f1ff); */
   display: flex;
-  justify-content: center; /* Horizontally centers the image */
-  align-items: center; /* Vertically centers the image */
-  height: 100vh; /* Full viewport height */
-  width: 100vw;
+  justify-content: center;
+  align-items: center; 
+  /* height: 100vh; 
+  width: 100vw; */
 }
 .d5-image{
-  background: linear-gradient(135deg, #ffffff, #d9f1ff);
+  /* background: linear-gradient(135deg, #ffffff, #d9f1ff); */
   display: flex;
-  justify-content: center; /* Horizontally centers the image */
-  align-items: center; /* Vertically centers the image */
-  height: 100vh; /* Full viewport height */
-  width: 100vw;
+  justify-content: center; 
+  align-items: center; 
+  /* height: 100vh; 
+  width: 100vw; */
 }
+
 .d6-image{
-  background: linear-gradient(135deg, #ffffff, #d9f1ff);
+  /* background: linear-gradient(135deg, #ffffff, #d9f1ff); */
   display: flex;
-  justify-content: center; /* Horizontally centers the image */
-  align-items: center; /* Vertically centers the image */
-  height: 100vh; /* Full viewport height */
-  width: 100vw;
+  justify-content: center; 
+  align-items: center; 
+  /* height: 100vh; 
+  width: 100vw; */
 }
 
 

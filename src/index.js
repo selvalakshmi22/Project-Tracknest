@@ -33,25 +33,25 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "./App";
-import SignUp from './components/SignUp'
-import Login from "./components/Login";
-import TaxCalculator from "./components/TaxCalculator";
+// import SignUp from './components/SignUp'
+// import Login from "./components/Login";
+// import TaxCalculator from "./components/TaxCalculator";
 
-export default function App1() {
-  return (
-    <BrowserRouter>
-      <Routes>
+// export default function App1() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
       
-          <Route index element={<App />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/tax" element={<TaxCalculator />} />
+//           <Route index element={<App />} />
+//           <Route path="/signup" element={<SignUp />} />
+//           <Route path="/Login" element={<Login />} />
+//           <Route path="/tax" element={<TaxCalculator />} />
 
     
-      </Routes>
-    </BrowserRouter>
-  );
-}
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App1 />);
+root.render(<App />);
